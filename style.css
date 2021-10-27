@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    color: hsl(268, 80%, 24%);
+    font-size: 15pt;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Noto Sans";
+}
+
+h1 {
+    color: hsl(268, 80%, 24%);
+    font-size: 36pt;
+    font-family: "IBM Plex Sans";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+h2 {
+    color: hsl(268, 53%, 40%);
+    font-size: 28pt;
+    font-family: "IBM Plex Sans";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+p {
+    color: hsl(268, 80%, 24%);
+    font-size: 15pt;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    li {
+        margin: 5px;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #F7F7F7;
+}
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+    }
+}
+
+#logo-img {
+    height: 90%;
+    width: auto;
+    margin: 5px 150px 5px 0px;
+}
+
+#index-logo-img {
+    height: 10%;
+    width: auto;
+    margin: 5px 150px 5px 0px;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    100% {
+        height: 90%;
+        opacity: 1;
+    }
+}
+
+#nav-list {
+    list-style: none;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+    #nav-list {
+        margin: 0px 0px 0px -120px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    #nav-list {
+        margin: 0px 0px 0px -120px;
+    }
+}
+
+#nav-list a {
+    color: hsl(268, 100%, 24%);
+    font-size: 18px;
+    padding: 63px;
+    margin: 0px;
+}
+
+@media (max-width: 700px) {
+    #nav-list a {
+        margin: 0px;
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    #nav-list a {
+        margin: 0px;
+        padding: 63px 20px 63px 20px;
+    }
+}
+
+#nav-list a:hover {
+    animation-name: block-color;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes block-color {
+    100% {
+        background-color: hsl(268, 100%, 24%);
+        color: hsl(268, 41%, 71%);
+    }
+}
+
+#main-body {
+    background-image: url(media/play_transparent.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 700px) {
+    #main-body {
+        height: auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    #main-body {
+        height: auto;
+    }
+}
+
+#main-body-servicios {
+    background-image: url(media/stadium_transparent.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 700px) {
+    #main-body-servicios {
+        height: auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    #main-body-servicios {
+        height: auto;
+    }
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    margin: 0 15vw 0 15vw;
+}
+
+@media (max-width: 700px) {
+    #title {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    #title {
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+    }
+}
+
+#main-text {
+    margin: 10px 0 10px 0;
+}
+
+#index-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-family: 'IBM Plex Sans';
+    font-size: 12pt;
+    border-radius: 25px;
+    border-width: 0;
+    letter-spacing: 1.5px;
+}
+
+#index-button:hover {
+    background-color: rgb(255, 187, 61);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding: 7vh 0 7vh 0;
+    background-color: white;
+}
+
+@media (max-width: 700px) {
+    #span-clientes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    #span-clientes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+.clientes {
+    width: 11vw;
+    height: auto;
+    margin: 1vw 20px 0 20px;
+}
+
+@media (max-width: 700px) {
+    .clientes {
+        width: 30vw;
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    .clientes {
+        width: 16vw;
+        margin: 0 20px 0 20px;
+    }
+}
+
+#servicios {
+    display: grid;
+    grid: 208px / auto auto;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    padding: 14vh 10vw 10vh 10vw;
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    #servicios {
+        grid: 408px / auto auto;
+        grid-column-gap: 100px;
+        grid-row-gap: 100px;
+        padding: 8vh 10vw 8vh 10vw;
+    }
+}
+
+@media (max-width: 700px) {
+    #servicios {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    .servicio {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -40px;
+    }
+}
+
+@media (min-width: 700px) and (max-width:1100px) {
+    .servicio {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.servicios-img {
+    width: 208px;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .servicios-img {
+        margin-bottom: 20px;
+    }
+}
+
+.servicios-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.servicios-titulo {
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    .servicios-titulo {
+        margin-top: 20px;
+    }
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#error-message {
+    font-family: "IBM Plex Sans";
+    color: orange;
+    margin-top: 40px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px;
+    padding: 50px 0 60px 0;
+}
+
+.contact-field {
+    height: 30px;
+    width: 70vw;
+    font-family: "Noto Sans";
+}
+
+@media (max-width: 700px) {
+    .contact-field {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    .contact-field {
+        width: 80vw;
+    }
+}
+
+#mensaje {
+    width: 70vw;
+    height: 100px;
+    font-family: "Noto Sans";
+}
+
+@media (max-width: 700px) {
+    #mensaje {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    #mensaje {
+        width: 80vw;
+    }
+}
+
+#submit {
+    width: 150px;
+    height: 30px;
+    margin-top: 30px;
+    font-family: "Noto Sans";
+    font-size: 12pt;
+    color: white;
+    background-color: hsl(268, 100%, 24%);
+    border-radius: 15px;
+}
+
+.small-header {
+    font-size: 14pt;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .small-header {
+        font-size: 12pt;
+    }
+}
+
+.contactarnos-links {
+    color: hsl(268, 53%, 40%);
+    font-family: "IBM Plex Sans";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#medios-sociales {
+    margin-top: 50px;
+}

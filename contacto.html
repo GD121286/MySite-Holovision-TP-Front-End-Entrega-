@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="static_assets/css/all.css" rel="stylesheet">
+    <title>Contacto | Holovisión</title>
+    <script type="text/javascript">
+        function validarContacto() {
+            var errorMessage = document.getElementById("error-message");
+           var text;
+           if (document.getElementById("nombre").value == "") {
+                text = "¡No te olvides poner tu nombre!";
+                errorMessage.innerHTML = text;
+                return false;
+            }
+            if (document.getElementById("mail").value == "") {
+                text = "¡No te olvides incluir tu mail!";
+                errorMessage.innerHTML = text;
+                return false;
+            }
+            if (document.getElementById("mensaje").value == "") {
+                text = "¡No te olvides incluir un mensaje!";
+                errorMessage.innerHTML = text;
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img id="logo-img" src="media/logo.png" alt="Holovisión Logo"> 
+        <nav id="navbar">
+            <ul id="nav-list">
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href=#>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contact">
+        <div id="error-message"></div>
+        <form id="contact-form" name="contact-form" method="post" action="#" onsubmit="return validarContacto()">
+            <input type="text" class="contact-field" id="nombre" placeholder="Nombre *">
+          <input type="email" class="contact-field" id="mail" placeholder="Mail *">
+          <input type="text" class="contact-field" id="cargo" placeholder="Cargo">
+          <textarea id="mensaje" class="contact-field" placeholder="Mensaje *"></textarea>
+        <button id="submit" type="submit" value="Submit">Enviar</button>
+        </form>
+        <h2 class="small-header"><a href="tel:1523376568" class="contactarnos-links">(15) 2337-6568</a></h2>
+        <h2 class="small-header"><a href="mailto: info@holovision.com.ar" class="contactarnos-links">info@holovision.com.ar</a></h2>
+        <h2 class="small-header">Arenales 1000 Piso 5</h2>
+        <h2 class="small-header">CABA C1061AAF, Argentina</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.553978120886!2d-58.390118996499226!3d-34.594336480366024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab7123d9455%3A0x5da40c910e1e9e05!2sArenales%201000%2C%20C1061%20AAF%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1634590315476!5m2!1sen!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+        <span id="medios-sociales">
+            <a href="#"><i class="fab fa-facebook-square fa-3x" style="color: hsl(268, 100%, 24%); margin: 0 15px 0 15px"></i></a>
+            <a href="#"><i class="fab fa-instagram-square fa-3x" style="color: hsl(268, 100%, 24%); margin: 0 15px 0 15px"></i></a>
+            <a href="#"><i class="fab fa-twitter-square fa-3x" style="color: hsl(268, 100%, 24%); margin: 0 15px 0 15px"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-3x" style="color: hsl(268, 100%, 24%); margin: 0 15px 0 15px"></i></a>
+        </span>
+    </main>
+    <footer>
+       
+    </footer>
+</body>
+</html>
